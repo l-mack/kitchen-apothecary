@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/kitchen-apothecary/static/css/main.d1b05096.chunk.css",
+    "main.js": "/kitchen-apothecary/static/js/main.963a3971.chunk.js",
+    "main.js.map": "/kitchen-apothecary/static/js/main.963a3971.chunk.js.map",
+    "runtime-main.js": "/kitchen-apothecary/static/js/runtime-main.b8459bff.js",
+    "runtime-main.js.map": "/kitchen-apothecary/static/js/runtime-main.b8459bff.js.map",
+    "static/js/2.cd4aed2d.chunk.js": "/kitchen-apothecary/static/js/2.cd4aed2d.chunk.js",
+    "static/js/2.cd4aed2d.chunk.js.map": "/kitchen-apothecary/static/js/2.cd4aed2d.chunk.js.map",
+    "index.html": "/kitchen-apothecary/index.html",
+    "precache-manifest.ebf78af4c3bb187372d8ab6943541269.js": "/kitchen-apothecary/precache-manifest.ebf78af4c3bb187372d8ab6943541269.js",
+    "service-worker.js": "/kitchen-apothecary/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/kitchen-apothecary/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.cd4aed2d.chunk.js.LICENSE.txt": "/kitchen-apothecary/static/js/2.cd4aed2d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b8459bff.js",
+    "static/js/2.cd4aed2d.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.963a3971.chunk.js"
+  ]
+}
