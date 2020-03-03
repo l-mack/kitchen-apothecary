@@ -1,22 +1,33 @@
 {
   "files": {
-    "main.css": "/kitchen-apothecary/static/css/main.d1b05096.chunk.css",
-    "main.js": "/kitchen-apothecary/static/js/main.963a3971.chunk.js",
-    "main.js.map": "/kitchen-apothecary/static/js/main.963a3971.chunk.js.map",
+    "main.css": "/kitchen-apothecary/static/css/main.c7b0f28e.chunk.css",
+    "main.js": "/kitchen-apothecary/static/js/main.a41ab9b2.chunk.js",
+    "main.js.map": "/kitchen-apothecary/static/js/main.a41ab9b2.chunk.js.map",
     "runtime-main.js": "/kitchen-apothecary/static/js/runtime-main.b8459bff.js",
     "runtime-main.js.map": "/kitchen-apothecary/static/js/runtime-main.b8459bff.js.map",
-    "static/js/2.cd4aed2d.chunk.js": "/kitchen-apothecary/static/js/2.cd4aed2d.chunk.js",
-    "static/js/2.cd4aed2d.chunk.js.map": "/kitchen-apothecary/static/js/2.cd4aed2d.chunk.js.map",
+    "static/js/2.c9070a99.chunk.js": "/kitchen-apothecary/static/js/2.c9070a99.chunk.js",
+    "static/js/2.c9070a99.chunk.js.map": "/kitchen-apothecary/static/js/2.c9070a99.chunk.js.map",
     "index.html": "/kitchen-apothecary/index.html",
-    "precache-manifest.ebf78af4c3bb187372d8ab6943541269.js": "/kitchen-apothecary/precache-manifest.ebf78af4c3bb187372d8ab6943541269.js",
+    "precache-manifest.8a8beec6699cd48949b392bc6d310dfe.js": "/kitchen-apothecary/precache-manifest.8a8beec6699cd48949b392bc6d310dfe.js",
     "service-worker.js": "/kitchen-apothecary/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/kitchen-apothecary/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.cd4aed2d.chunk.js.LICENSE.txt": "/kitchen-apothecary/static/js/2.cd4aed2d.chunk.js.LICENSE.txt"
+    "static/css/main.c7b0f28e.chunk.css.map": "/kitchen-apothecary/static/css/main.c7b0f28e.chunk.css.map",
+    "static/js/2.c9070a99.chunk.js.LICENSE.txt": "/kitchen-apothecary/static/js/2.c9070a99.chunk.js.LICENSE.txt",
+    "static/media/aloeVera.jpg": "/kitchen-apothecary/static/media/aloeVera.6ed86a73.jpg",
+    "static/media/ashwagandha.jpg": "/kitchen-apothecary/static/media/ashwagandha.6b28e694.jpg",
+    "static/media/chamomile.jpg": "/kitchen-apothecary/static/media/chamomile.cdfb202a.jpg",
+    "static/media/echinacea.jpg": "/kitchen-apothecary/static/media/echinacea.29c048cc.jpg",
+    "static/media/garlic.jpg": "/kitchen-apothecary/static/media/garlic.07047c74.jpg",
+    "static/media/ginger.jpg": "/kitchen-apothecary/static/media/ginger.89cbe9ce.jpg",
+    "static/media/ginseng.jpg": "/kitchen-apothecary/static/media/ginseng.d97a100e.jpg",
+    "static/media/logo.svg": "/kitchen-apothecary/static/media/logo.aed88fbf.svg",
+    "static/media/marigold.jpg": "/kitchen-apothecary/static/media/marigold.5015c525.jpg",
+    "static/media/turmeric.jpg": "/kitchen-apothecary/static/media/turmeric.0f8eb9aa.jpg",
+    "static/media/valerian.jpg": "/kitchen-apothecary/static/media/valerian.e27c8692.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.b8459bff.js",
-    "static/js/2.cd4aed2d.chunk.js",
-    "static/css/main.d1b05096.chunk.css",
-    "static/js/main.963a3971.chunk.js"
+    "static/js/2.c9070a99.chunk.js",
+    "static/css/main.c7b0f28e.chunk.css",
+    "static/js/main.a41ab9b2.chunk.js"
   ]
 }
