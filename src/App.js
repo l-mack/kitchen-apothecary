@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import firebase from './firebase';
+import Header from './Header.js';
 import Form from './Form.js'
-// import PlantResults from './PlantResults.js';
+import PlantResults from './PlantResults.js';
 
 class App extends Component{
   constructor() {
@@ -10,7 +11,8 @@ class App extends Component{
 
 		this.state = {
       plants: [],
-      userSelection: ""
+      userSelection: "",
+      plantMatch: []
     }
   }
 
@@ -42,36 +44,31 @@ class App extends Component{
         
         const plantResults = this.state.plants.filter( (benefitSelection) => {
           return benefitSelection.benefit === benefit;
-        })
+        })        
         this.setState({
           plantMatch: plantResults
-        })
+          
+        }
+        )
       }
 
   render(){
     return (
       <div className="formFlex">
 
-        <h1>Apothecary Kitchen</h1>
+        < Header />
 
         < Form getBenefit={this.whichBenefit} />
 
-        {/* < PlantResults displayPlant={this.state.plantMatch} /> */}
+        <main className = "wrapper">
 
-        {/* <main>
-            <ul>
-          {
-          this.state.plantMatch.map( (selectedBenefit) => {
-            return ( <li>{selectedBenefit.name}</li>
-            )
-          })
-          }
-        </ul>
-        </main> */}
+        < PlantResults displayPlant={this.state.plantMatch} />
 
-      </div>
-    );
-  }
+        </main>
+
+        </div>
+      );
+    }
   }
   
 
