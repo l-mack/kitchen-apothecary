@@ -9,9 +9,7 @@ function Header(props){
             <div className = "headerFlex">
 
                 <h1>Apothecary Kitchen</h1>
-                <div className = "imgCont">
-                    <img className="logo" src={logo} />
-                </div>
+
 
             </div>
             
