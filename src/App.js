@@ -1,26 +1,78 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import firebase from './firebase';
+import Form from './Form.js'
+// import PlantResults from './PlantResults.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+class App extends Component{
+  constructor() {
+    super();
+
+		this.state = {
+      plants: [],
+      userSelection: ""
+    }
+  }
+
+  componentDidMount(){
+      const dbRef = firebase.database().ref();
+      dbRef.on('value', (response) => {
+        const newState = [];
+        const data = response.val();
+        for(let key in data){
+          newState.push(data[key]);
+        }
+        this.setState({
+          plants: newState            
+        }, () =>{
+          console.log(this.state.plants)
+        })
+    });
+  }
+
+    // get user selection from form component
+      whichBenefit = (e, userChoice) => {
+        e.preventDefault();
+        this.findPlants(userChoice);
+      }
+
+      // filter plants array to find plants that match the chosen benefit and save to state
+
+      findPlants = (benefit) => {
+        
+        const plantResults = this.state.plants.filter( (benefitSelection) => {
+          return benefitSelection.benefit === benefit;
+        })
+        this.setState({
+          plantMatch: plantResults
+        })
+      }
+
+  render(){
+    return (
+      <div className="formFlex">
+
+        <h1>Apothecary Kitchen</h1>
+
+        < Form getBenefit={this.whichBenefit} />
+
+        {/* < PlantResults displayPlant={this.state.plantMatch} /> */}
+
+        {/* <main>
+            <ul>
+          {
+          this.state.plantMatch.map( (selectedBenefit) => {
+            return ( <li>{selectedBenefit.name}</li>
+            )
+          })
+          }
+        </ul>
+        </main> */}
+
+      </div>
+    );
+  }
+  }
+  
 
 export default App;
