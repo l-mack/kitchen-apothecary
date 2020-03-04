@@ -42,21 +42,20 @@ function PlantResults(props){
               }
 
             return ( 
-              
-                <div className = "plantGrid"> 
+              <div>
 
-                    <div className = "imgCont">
-                      <img src={imgPath} alt={selectedBenefit.name}/>
-                    </div>
-                    <h3>{selectedBenefit.name}</h3>
-
-                    <ul className = "plantGridTextbox">
-                      <li key = {selectedBenefit.tId}><p className = "fieldName">type: </p><p>{selectedBenefit.type}</p></li>
-                      <li key = {selectedBenefit.bId}><p className = "fieldName">benefit: </p><p>{selectedBenefit.benefit}</p></li>
-                      <li key = {selectedBenefit.cId}><p className = "fieldName">caution: </p><p>{selectedBenefit.caution}</p></li>
-                    </ul>
-              
+                <div className = "imgCont">
+                  <img src={imgPath} alt={selectedBenefit.name}/>
                 </div>
+                <h3>{selectedBenefit.name}</h3>
+
+                <ul className = "plantGridTextbox">
+                  <li key = {selectedBenefit.tId}><p className = "fieldName">type: </p><p>{selectedBenefit.type}</p></li>
+                  <li key = {selectedBenefit.bId}><p className = "fieldName">benefit: </p><p>{selectedBenefit.benefit}</p></li>
+                  <li key = {selectedBenefit.cId}><p className = "fieldName">caution: </p><p>{selectedBenefit.caution}</p></li>
+                </ul>
+              
+              </div>
           
             )
         })  

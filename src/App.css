@@ -75,6 +75,22 @@ h3{
   align-items: center;
 }
 
+.backgroundImgCont{
+  position: relative;
+}
+
+.displayBttn{
+  border: 2px solid white;
+  background: none;
+  color: white;
+  font-family: 'Open Sans Condensed';
+  font-size: 2.5rem;
+  font-weight: 900;
+  position: absolute;
+  top: 60%;
+  left: 25%;
+ } 
+
 form{
   font-family: 'Open Sans Condensed';
   font-size: 2.5rem;
@@ -82,13 +98,13 @@ form{
   margin: 30px 0;
 }
 
-button{
-  border: black;
+.selectBttn{
+  border: 2px solid black;
   background-color: black;
   color: white;
 }
 
-main{
+.plantGrid{
   font-family: 'Open Sans Condensed';
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -112,3 +128,29 @@ p{
 .fieldName{
   font-weight: 900;
 }
+
+@media (max-width: 930px) {
+  .plantGrid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 420px){
+  h1{
+    font-size: 3rem;
+  }
+  .selectBttn{
+    margin-top: 10px;
+  }
+  .wrapper{
+    width: 95%;
+  }
+  .imgCont{
+    width: 80%;
+  }
+  form{
+    font-size: 1.5rem;
+  }
+
+}
+

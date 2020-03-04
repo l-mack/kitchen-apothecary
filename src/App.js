@@ -4,6 +4,8 @@ import firebase from './firebase';
 import Header from './Header.js';
 import Form from './Form.js'
 import PlantResults from './PlantResults.js';
+import background from './assets/backgroundImg1.jpg'
+
 
 class App extends Component{
   constructor() {
@@ -12,7 +14,8 @@ class App extends Component{
 		this.state = {
       plants: [],
       userSelection: "",
-      plantMatch: []
+      plantMatch: [],
+      HomeImg: true
     }
   }
 
@@ -26,8 +29,6 @@ class App extends Component{
         }
         this.setState({
           plants: newState            
-        }, () =>{
-          console.log(this.state.plants)
         })
     });
   }
@@ -46,23 +47,53 @@ class App extends Component{
           return benefitSelection.benefit === benefit;
         })        
         this.setState({
-          plantMatch: plantResults
-          
+          plantMatch: plantResults  
         }
-        )
-      }
+      )
+    }
+
+    // in the below code, I was attempting to display an image with a button before the search results are displayed, but I was not able to get it functioning.  
+
+  // showHomeImg = () =>{
+  //     this.setState({HomeImg : true});
+  // }
+
+  // hideHomeImg = () =>{
+  //     this.setState({HomeImg : false});
+  // }
+
+  // renderHomeImg = () =>{
+  //   if(this.state.showHomeImg){
+  //     return(
+  //     <div className="backgroundImgCont">
+  //       <img src={background} alt="wooden table decorated with plants and herbs" />
+  //     <button className="displayBttn" onClick={this.hideHomeImg} >What would you like help with?</button>
+  //     </div>
+  //     )
+  //   } else {
+  //   return(
+  //   null
+  //     )
+  //   }
+  // }
 
   render(){
+    
     return (
-      <div className="formFlex">
+      <div className="wrapper">
 
         < Header />
 
         < Form getBenefit={this.whichBenefit} />
 
         <main className = "wrapper">
+          
+          
+          {/* {this.renderHomeImg()} */}
 
-        < PlantResults displayPlant={this.state.plantMatch} />
+          <div className = "plantGrid">
+            < PlantResults displayPlant={this.state.plantMatch} />
+          </div>
 
         </main>
 

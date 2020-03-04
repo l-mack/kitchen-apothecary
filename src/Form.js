@@ -27,10 +27,9 @@ handleChange = (event) =>{
                         <option value="inflammation">Inflammation</option>
                         <option value="circulatory support">Circulatory Support</option>
                         <option value="engery boost">Energy Boost</option>
-
                     </select>
                 </label>
-                <button onClick={ (e) => this.props.getBenefit(e, this.state.userSelection)}>Select</button>
+                <button className="selectBttn" onClick={ (e) => this.props.getBenefit(e, this.state.userSelection)}>Select</button>
             </form>
         )
     }
