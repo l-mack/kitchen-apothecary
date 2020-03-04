@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fbfedc3bbec54c2ef318b1573cda22a8",
+    "revision": "b669ca8522dea2b6cbaa9a966b0c8523",
     "url": "/kitchen-apothecary/index.html"
   },
   {
-    "revision": "94f91d9e2ec2be8fb33a",
-    "url": "/kitchen-apothecary/static/css/main.c7b0f28e.chunk.css"
+    "revision": "6b0f25bc766e4b88ef61",
+    "url": "/kitchen-apothecary/static/css/main.f649b7e2.chunk.css"
   },
   {
     "revision": "3f87c3929a56d3200da3",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kitchen-apothecary/static/js/2.c9070a99.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "94f91d9e2ec2be8fb33a",
-    "url": "/kitchen-apothecary/static/js/main.a41ab9b2.chunk.js"
+    "revision": "6b0f25bc766e4b88ef61",
+    "url": "/kitchen-apothecary/static/js/main.24f4ab0c.chunk.js"
   },
   {
     "revision": "94679737e859d6ea9714",
@@ -52,8 +52,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kitchen-apothecary/static/media/ginseng.d97a100e.jpg"
   },
   {
-    "revision": "aed88fbf7e649f23bd3abfdc36d4a818",
-    "url": "/kitchen-apothecary/static/media/logo.aed88fbf.svg"
+    "revision": "61b2e5582da3399d82ccac8df3ed7af8",
+    "url": "/kitchen-apothecary/static/media/logo.61b2e558.png"
   },
   {
     "revision": "5015c525a4d3832d3447c8b63eea7c04",
