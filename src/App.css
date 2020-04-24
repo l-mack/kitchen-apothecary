@@ -22,6 +22,17 @@ li{
     list-style: none;
 }
 
+.hero{
+  background-image: 
+  linear-gradient(to bottom, rgba(248,250,184, 0.52), rgba(204,240,225, 0.73)), 
+  url(https://firebasestorage.googleapis.com/v0/b/project5-e9638.appspot.com/o/backgroundImg1.jpg?alt=media&token=40352b39-25e5-458e-9d2c-2c7277236918);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  
+}
+
 .wrapper{
     width: 80%; 
     max-width: 1300px;
@@ -45,15 +56,22 @@ html{
     height: 70%;
 }
 
+.headerFlex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 55px;
+}
+
 h1{
   font-family: 'Special Elite';
   font-size: 5rem;
   text-align: center;
-  padding: 10px;
+  padding-bottom: 20px;
 }
 
 h2{
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   font-family: 'Open Sans Condensed';
 }
@@ -67,12 +85,6 @@ h3{
 
 .logo{
   width: 10%;
-}
-
-.headerFlex{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .backgroundImgCont{

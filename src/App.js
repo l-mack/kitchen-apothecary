@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import firebase from './firebase';
 import Header from './Header.js';
+import Home from './Home.js';
 import Form from './Form.js'
 import PlantResults from './PlantResults.js';
 import background from './assets/backgroundImg1.jpg'
@@ -52,54 +54,33 @@ class App extends Component{
       )
     }
 
-    // in the below code, I was attempting to display an image with a button before the search results are displayed, but I was not able to get it functioning.  
-
-  // showHomeImg = () =>{
-  //     this.setState({HomeImg : true});
-  // }
-
-  // hideHomeImg = () =>{
-  //     this.setState({HomeImg : false});
-  // }
-
-  // renderHomeImg = () =>{
-  //   if(this.state.showHomeImg){
-  //     return(
-  //     <div className="backgroundImgCont">
-  //       <img src={background} alt="wooden table decorated with plants and herbs" />
-  //     <button className="displayBttn" onClick={this.hideHomeImg} >What would you like help with?</button>
-  //     </div>
-  //     )
-  //   } else {
-  //   return(
-  //   null
-  //     )
-  //   }
-  // }
-
   render(){
     
     return (
-      <div className="wrapper">
+      <Router>
+        <div className="hero">
+          <div className="wrapper">
+            <Header />
 
-        < Header />
+            <Route path="/kitchen-apothecary" component={Home} exact />
 
-        < Form getBenefit={this.whichBenefit} />
+            <Route path="/kitchen-apothecary/search">
+              <Form getBenefit={this.whichBenefit} />
+              <main className="wrapper">
 
-        <main className = "wrapper">
-          
-          
-          {/* {this.renderHomeImg()} */}
+                <div className="plantGrid">
+                  <PlantResults displayPlant={this.state.plantMatch} />
+                </div>
+              </main>
+            </Route>
 
-          <div className = "plantGrid">
-            < PlantResults displayPlant={this.state.plantMatch} />
-          </div>
-
-        </main>
-
+          </div> 
         </div>
-      );
-    }
+        
+      </Router>
+    );
+  }
+  
   }
   
 
