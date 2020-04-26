@@ -15,26 +15,16 @@ h1,
 h2,
 h3,
 ul,
-li{
+li,
+form{
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
 }
 
-.hero{
-  background-image: 
-  linear-gradient(to bottom, rgba(248,250,184, 0.52), rgba(204,240,225, 0.73)), 
-  url(https://firebasestorage.googleapis.com/v0/b/project5-e9638.appspot.com/o/backgroundImg1.jpg?alt=media&token=40352b39-25e5-458e-9d2c-2c7277236918);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  
-}
-
 .wrapper{
-    width: 80%; 
+    width: 70%; 
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -54,66 +44,117 @@ img{
 html{
     font-size: 62.5%;
     height: 70%;
+    background: linear-gradient(to left, rgba(248,250,184, 0.52), rgba(204,240,225, 0.73))
+    /* background: rgba(204,240,225, 0.73); */
+}
+
+.hero{
+  background-image: 
+  linear-gradient(to bottom, rgba(248,250,184, 0.52), rgba(204,240,225, 0.73)), 
+  url(https://firebasestorage.googleapis.com/v0/b/project5-e9638.appspot.com/o/backgroundImg1.jpg?alt=media&token=40352b39-25e5-458e-9d2c-2c7277236918);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  
 }
 
 .headerFlex{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 55px;
+  padding-bottom: 10px;
+  padding-top: 50px;
 }
 
 h1{
   font-family: 'Special Elite';
-  font-size: 5rem;
+  font-size: 5.3rem;
   text-align: center;
-  padding-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1rem;  
 }
 
 h2{
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   font-family: 'Open Sans Condensed';
-}
-
-h3{
-  font-family: 'Special Elite';
-  font-size: 2rem;
-  text-align: center;
-  padding: 10px;
+  letter-spacing: .5rem;
 }
 
 .logo{
   width: 10%;
 }
 
-.backgroundImgCont{
-  position: relative;
+.homeTextBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.displayBttn{
-  border: 2px solid white;
+.homeText{
+  font-family: 'Special Elite';
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  letter-spacing: 1.2px;
+  margin-top: 5%;
+}
+
+  a{
+  border: 2px solid #f76a8c;
+  color: #f76a8c;
   background: none;
-  color: white;
   font-family: 'Open Sans Condensed';
   font-size: 2.5rem;
   font-weight: 900;
-  position: absolute;
-  top: 60%;
-  left: 25%;
- } 
+  text-align: center;
+  letter-spacing: 1.5px;
+  margin: 40px 0;
+  padding: 10px 25px;
+  opacity: .8;
+  transition: .3s;
+}
+
+a:hover{
+  opacity: 7;
+}
 
 form{
-  font-family: 'Open Sans Condensed';
-  font-size: 2.5rem;
   text-align: center;
+  position: relative;
+}
+
+.formFlex{
   margin: 30px 0;
 }
 
+select,
+button{
+  font-family: 'Open Sans Condensed';
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+
+}
+
 .selectBttn{
-  border: 2px solid black;
-  background-color: black;
+  border: 2.5px solid #f76a8c;
+  background-color: #f76a8c;
   color: white;
+  opacity: .8;
+  transition: .3s;
+}
+
+.selectBttn:hover{
+  opacity: 1;
+}
+
+.homeBttn{
+  position: absolute;
+  left: 90%;
+  bottom: 1%;
+
 }
 
 .plantGrid{
@@ -124,14 +165,35 @@ form{
   align-items: center;
 }
 
+.imgCont{
+  border: solid .5px #f76a8c;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px;
+}
+
+img{
+  border-radius: 5px;
+}
+
 .plantGridTextbox{
   font-size: 2rem;
 }
 
-li{
+h3{
+  font-family: 'Special Elite';
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 5px;
   padding: 10px;
+  border-bottom: .5px solid black;
+  margin: 0 20px;
 }
 
+li{
+  padding: 10px;
+  letter-spacing: 1px;
+}
 
 p{
   display: inline;
@@ -139,6 +201,7 @@ p{
 
 .fieldName{
   font-weight: 900;
+  font-family: 'Open Sans Condensed';
 }
 
 @media (max-width: 930px) {

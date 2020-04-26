@@ -14,7 +14,7 @@ function Header(props){
             </div>
             
             <h2>a medicinal plant and herb database</h2>
-            
+
         </header>
     )
 }

@@ -1,17 +1,39 @@
 import React from 'react';
-import { NavLink as Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import Header from './Header.js';
+
 
 
 function Home (props){
     return(
         
-        <div>
-        
-            
+            <div className="hero">
+                <div className="wrapper">
+                    
+                    <Header />
 
-            <button className="displayBttn"> <Link to= "/kitchen-apothecary/search">What would you like help with?</Link></button>
-        
-        </div>
+                        <main className="wrapper">
+
+                            <div className="homeTextBox">
+                                <p className="homeText">
+                                    Apothecary Kitchen allows you to search various medicinal plant based on their beneficial qualities.  Learn about which plants can help you with feel better and improve your health.
+                                </p>
+
+                            <Link
+                                className="displayBttn"
+                                to="/kitchen-apothecary/search">
+                                    search plants
+                            </Link>
+
+                            <Link to="/kitchen-apothecary/displayall">
+                                    display all
+                            </Link>
+                            </div>
+                            
+                        </main>
+
+                </div>
+            </div>
     )
 }
 

@@ -6,7 +6,7 @@ import Header from './Header.js';
 import Home from './Home.js';
 import Form from './Form.js'
 import PlantResults from './PlantResults.js';
-import background from './assets/backgroundImg1.jpg'
+import DisplayAll from './DisplayAll';
 
 
 class App extends Component{
@@ -17,7 +17,8 @@ class App extends Component{
       plants: [],
       userSelection: "",
       plantMatch: [],
-      HomeImg: true
+      HomeImg: true,
+      
     }
   }
 
@@ -32,7 +33,7 @@ class App extends Component{
         this.setState({
           plants: newState            
         })
-    });
+      }); 
   }
 
     // get user selection from form component
@@ -44,8 +45,8 @@ class App extends Component{
       // filter plants array to find plants that match the chosen benefit and save to state
 
       findPlants = (benefit) => {
-        
-        const plantResults = this.state.plants.filter( (benefitSelection) => {
+        const oldPlantsArray = [...this.state.plants];
+        const plantResults = oldPlantsArray.filter( (benefitSelection) => {
           return benefitSelection.benefit === benefit;
         })        
         this.setState({
@@ -54,28 +55,45 @@ class App extends Component{
       )
     }
 
+    // scroll to plant results
+
+    // scrollTo = () => {
+    //   const element = document.getElementById('form');
+    //   console.log(element);
+    //   element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+
+    // }
+
   render(){
     
     return (
       <Router>
-        <div className="hero">
-          <div className="wrapper">
-            <Header />
-
+        
             <Route path="/kitchen-apothecary" component={Home} exact />
 
             <Route path="/kitchen-apothecary/search">
-              <Form getBenefit={this.whichBenefit} />
+
+              <Header />
+              
               <main className="wrapper">
+                
+                <Form getBenefit={this.whichBenefit} />
 
                 <div className="plantGrid">
                   <PlantResults displayPlant={this.state.plantMatch} />
                 </div>
-              </main>
+
+            <Route path="/kitchen-apothecary/displayall">
+              
+              <DisplayAll displayAllPlants={this.state.plants} />
+              
             </Route>
 
-          </div> 
-        </div>
+              </main>
+
+              
+
+            </Route>
         
       </Router>
     );
