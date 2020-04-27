@@ -4,7 +4,7 @@ import logo from './assets/logo.png'
 function Header(props){
     return(
 
-        <header className = "wrapper">
+        <header className = "headerWrapper">
         
             <div className = "headerFlex">
                 <h1>Apothecary Kitchen</h1>

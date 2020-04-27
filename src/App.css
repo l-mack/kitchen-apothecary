@@ -25,8 +25,13 @@ form{
 
 .wrapper{
     width: 70%; 
-    max-width: 1300px;
+    max-width: 1500px;
     margin: 0 auto;
+}
+
+.headerWrapper{
+  width: 70%;
+  margin: 0 auto;
 }
 
 li{
@@ -46,6 +51,18 @@ html{
     height: 70%;
     background: linear-gradient(to left, rgba(248,250,184, 0.52), rgba(204,240,225, 0.73))
     /* background: rgba(204,240,225, 0.73); */
+}
+
+body{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+  min-height: 100%;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
 }
 
 .hero{
@@ -99,7 +116,13 @@ h2{
   text-align: center;
   line-height: 2.5rem;
   letter-spacing: 1.2px;
-  margin-top: 5%;
+  margin-top: 10%;
+}
+
+.linkBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
   a{
@@ -111,7 +134,8 @@ h2{
   font-weight: 900;
   text-align: center;
   letter-spacing: 1.5px;
-  margin: 40px 0;
+  margin: 0 40px;
+  margin-top: 15%;
   padding: 10px 25px;
   opacity: .8;
   transition: .3s;
@@ -127,7 +151,12 @@ form{
 }
 
 .formFlex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   margin: 30px 0;
+
 }
 
 select,
@@ -150,11 +179,16 @@ button{
   opacity: 1;
 }
 
-.homeBttn{
+.homeBttnSearch{
   position: absolute;
-  left: 90%;
-  bottom: 1%;
+  right: 90%;
+  bottom: 330%;
+}
 
+.homeBttnDisplay{
+  position: absolute;
+  right: 75%;
+  bottom: 75%;
 }
 
 .plantGrid{
@@ -170,6 +204,7 @@ button{
   border-radius: 5px;
   padding: 15px;
   margin: 20px;
+  margin-top: 50px;
 }
 
 img{
@@ -204,9 +239,176 @@ p{
   font-family: 'Open Sans Condensed';
 }
 
+/* displayAll styles */
+
+.displayAllGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  padding-bottom: 50px;
+
+}
+
+.displayAllItem .imgCont{
+  transform: scale(1);
+  transition: all .3s ease;
+  position: relative;
+}
+
+.displayAllItem .imgCont:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.displayMask{
+  position: absolute;
+  border-radius: 5px;
+  top: 5%;
+  bottom: 5%;
+  opacity: 0;
+  width: 92.5%;
+  background-color: rgba(204,240,225, 0.73);
+  transition: all .3s ease-in;
+  padding: 20px;
+}
+
+.displayMask p{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.displayMask:hover{
+  opacity: 1;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  background: #f76a8c;
+  padding: 15px;
+}
+
+footer p{
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1090px){
+  .linkBox{
+    flex-direction: column;
+  }
+  .headerWrapper{
+    width: 100%;
+  }
+    a{
+    font-size: 2rem;
+  }
+
+  .displayMask p{
+    font-size: 1rem;
+  }
+
+  li{
+    padding: 0;
+  }
+}
+
+
 @media (max-width: 930px) {
+
+    .wrapper{
+    width: 80%;
+  }
+
   .plantGrid{
     grid-template-columns: 1fr;
+  }
+
+  a{
+    font-size: 1.5rem;
+  }
+
+  .homeText{
+    font-size: 1.3rem;
+  }
+
+   h1{
+    font-size: 5rem;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
+  .displayMask{
+    top: 7%;
+    bottom: 7%;
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 765px){
+  .headerFlex{
+    flex-direction: column;
+  }
+
+
+
+ h1{
+    font-size: 4rem;
+  }
+
+  h2{
+    font-size: 1.5rem;
+  }
+
+  .homeText{
+    font-size: 1.1rem;
+  }
+
+    .plantGridTextbox{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 635px){
+  .displayAllGrid{
+    grid-template-columns: 1fr;
+  }
+
+  .displayMask {
+    top: 5%;
+    bottom: 5%;
+    width: 93%;
+  }
+
+  .displayMask p{
+    font-size: 1.5rem;
+  }
+
+  li{
+    padding: 5px;
+  }
+}
+
+@media (max-width: 475px){
+  a{
+    padding: 5px 20px;
+  }
+
+  .wrapper{
+    width: 90%;
+  }
+
+  .formFlex{
+    flex-direction: column;
+    
+  }
+
+  .selectBttn{
+    margin-top: 20px;
   }
 }
 

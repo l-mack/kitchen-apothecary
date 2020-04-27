@@ -19,15 +19,22 @@ function Home (props){
                                     Apothecary Kitchen allows you to search various medicinal plant based on their beneficial qualities.  Learn about which plants can help you with feel better and improve your health.
                                 </p>
 
-                            <Link
-                                className="displayBttn"
-                                to="/kitchen-apothecary/search">
+                            <div className="linkBox">
+                                <Link
+                                    className="search"
+                                    to="/kitchen-apothecary/search">
                                     search plants
-                            </Link>
+                                </Link>
 
-                            <Link to="/kitchen-apothecary/displayall">
+                                <Link
+                                    className="display"
+                                    to="/kitchen-apothecary/displayall">
                                     display all
-                            </Link>
+                                </Link>
+
+                            </div>
+                            
+
                             </div>
                             
                         </main>

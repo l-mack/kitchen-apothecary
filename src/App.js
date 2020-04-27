@@ -7,6 +7,7 @@ import Home from './Home.js';
 import Form from './Form.js'
 import PlantResults from './PlantResults.js';
 import DisplayAll from './DisplayAll';
+import Footer from './Footer';
 
 
 class App extends Component{
@@ -73,7 +74,12 @@ class App extends Component{
 
             <Route path="/kitchen-apothecary/search">
 
-              <Header />
+              <div className="wrapper">
+
+                <Header />
+
+              </div>
+              
               
               <main className="wrapper">
                 
@@ -83,22 +89,29 @@ class App extends Component{
                   <PlantResults displayPlant={this.state.plantMatch} />
                 </div>
 
-            <Route path="/kitchen-apothecary/displayall">
-              
-              <DisplayAll displayAllPlants={this.state.plants} />
-              
-            </Route>
-
               </main>
-
-              
-
             </Route>
+
+            <Route path="/kitchen-apothecary/displayall">
+
+              <div className="wrapper">
+
+                <Header />
+                
+              </div>
+            
+              <main className="wrapper">
+                
+                <DisplayAll displayAllPlants={this.state.plants} />
+
+            </main>
+          </Route>
+
+          {/* <Footer /> */}
         
       </Router>
-    );
-  }
-  
+      );
+    }
   }
   
 

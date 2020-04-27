@@ -38,12 +38,10 @@ handleChange = (event) =>{
                         <button className="selectBttn" onClick={(e) => this.props.getBenefit(e, this.state.userSelection)}>Select</button>
                     </div>
 
-                <Link className="homeBttn" to="/kitchen-apothecary/">home</Link>
+                <Link className="homeBttnSearch" to="/kitchen-apothecary/">home</Link>
 
 
                 </form>
-
-            
         )
     }
 
