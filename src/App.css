@@ -312,6 +312,10 @@ footer p{
   li{
     padding: 0;
   }
+
+  .homeBttnDisplay{
+    right: 77%;
+  }
 }
 
 
@@ -354,8 +358,6 @@ footer p{
     flex-direction: column;
   }
 
-
-
  h1{
     font-size: 4rem;
   }
@@ -370,6 +372,11 @@ footer p{
 
     .plantGridTextbox{
     font-size: 1.5rem;
+  }
+
+  .homeBttnDisplay,
+  .homeBttnSearch {
+    right: 70%;
   }
 }
 
@@ -391,6 +398,26 @@ footer p{
   li{
     padding: 5px;
   }
+
+  .homeBttnDisplay {
+    right: 30%;
+    bottom: 53%;
+  }
+
+  .homeBttnSearch {
+    right: 30%;
+    bottom: 150%;
+  }
+
+   h2{
+
+    margin-bottom: 20%;
+  } 
+}
+
+
+@media (max-width: 520px){
+ 
 }
 
 @media (max-width: 475px){
@@ -410,24 +437,35 @@ footer p{
   .selectBttn{
     margin-top: 20px;
   }
+
+  .homeBttnSearch{
+    bottom: 125%;
+  }
 }
 
 @media (max-width: 420px){
   h1{
     font-size: 3rem;
   }
+
   .selectBttn{
     margin-top: 10px;
   }
+
+  .homeBttnDisplay {
+    bottom: 56%;
+  }
+
   .wrapper{
     width: 95%;
   }
+
   .imgCont{
     width: 80%;
   }
+
   form{
     font-size: 1.5rem;
   }
-
 }
 
