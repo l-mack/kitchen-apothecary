@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5ccb9eb759d189a95bd411683fff1f08",
+    "revision": "fe411410b4a5d210ca7e4e8283afe64a",
     "url": "/kitchen-apothecary/index.html"
   },
   {
-    "revision": "7ce83d26644a73f21650",
-    "url": "/kitchen-apothecary/static/css/main.d8aaf803.chunk.css"
+    "revision": "b90c9191632c4f13a2a8",
+    "url": "/kitchen-apothecary/static/css/main.3984c480.chunk.css"
   },
   {
     "revision": "44b4edf660ee4880ff86",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kitchen-apothecary/static/js/2.37f4331a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7ce83d26644a73f21650",
+    "revision": "b90c9191632c4f13a2a8",
     "url": "/kitchen-apothecary/static/js/main.2c8570fd.chunk.js"
   },
   {

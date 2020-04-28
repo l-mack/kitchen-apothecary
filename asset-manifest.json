@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kitchen-apothecary/static/css/main.d8aaf803.chunk.css",
+    "main.css": "/kitchen-apothecary/static/css/main.3984c480.chunk.css",
     "main.js": "/kitchen-apothecary/static/js/main.2c8570fd.chunk.js",
     "main.js.map": "/kitchen-apothecary/static/js/main.2c8570fd.chunk.js.map",
     "runtime-main.js": "/kitchen-apothecary/static/js/runtime-main.b8459bff.js",
@@ -8,16 +8,16 @@
     "static/js/2.37f4331a.chunk.js": "/kitchen-apothecary/static/js/2.37f4331a.chunk.js",
     "static/js/2.37f4331a.chunk.js.map": "/kitchen-apothecary/static/js/2.37f4331a.chunk.js.map",
     "index.html": "/kitchen-apothecary/index.html",
-    "precache-manifest.d8074b943d0f15d3cd0b34ac6c5e8b2c.js": "/kitchen-apothecary/precache-manifest.d8074b943d0f15d3cd0b34ac6c5e8b2c.js",
+    "precache-manifest.67fac6f649ee4937de7995549f6e8a1e.js": "/kitchen-apothecary/precache-manifest.67fac6f649ee4937de7995549f6e8a1e.js",
     "service-worker.js": "/kitchen-apothecary/service-worker.js",
-    "static/css/main.d8aaf803.chunk.css.map": "/kitchen-apothecary/static/css/main.d8aaf803.chunk.css.map",
+    "static/css/main.3984c480.chunk.css.map": "/kitchen-apothecary/static/css/main.3984c480.chunk.css.map",
     "static/js/2.37f4331a.chunk.js.LICENSE.txt": "/kitchen-apothecary/static/js/2.37f4331a.chunk.js.LICENSE.txt",
     "static/media/logo.png": "/kitchen-apothecary/static/media/logo.61b2e558.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b8459bff.js",
     "static/js/2.37f4331a.chunk.js",
-    "static/css/main.d8aaf803.chunk.css",
+    "static/css/main.3984c480.chunk.css",
     "static/js/main.2c8570fd.chunk.js"
   ]
 }
